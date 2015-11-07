@@ -12,11 +12,11 @@ Then place *3* messages on the queue for each invokation of the program
 
 Hint:
 
-```python
-import json
-print(json.dumps({'foo': 123, 'bar': 'def'}))
-```
-    {"bar": "def", "foo": 123}
+>! ```python
+>! import json
+>! print(json.dumps({'foo': 123, 'bar': 'def'}))
+>! ```
+>!    {"bar": "def", "foo": 123}
 
 Hint 2:
 
