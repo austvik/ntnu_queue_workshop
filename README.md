@@ -33,6 +33,9 @@ or see [https://github.com/Azure/azure-storage-python](azure-storage-python gith
 
 ### 6. Start on the tasks
 
+* [Task 1 - Structured Content](docs/structured_content.md)
+* [Task 2 - Fairness](docs/fairness.md)
+
 References
 ----------
 
