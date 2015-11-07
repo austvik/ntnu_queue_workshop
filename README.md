@@ -27,11 +27,19 @@ or see [https://github.com/Azure/azure-storage-python](azure-storage-python gith
 
     git clone https://github.com/austvik/ntnu_queue_workshop.git
 
-### 5. Run the first simple test
+### 5. Fix the connection strings
+
+In common/common.py:
+
+Change QUEUE_NAME to something that is unique for you.
+
+Change ACCOUNT_KEY: Replace ? with should be J (there are two of them).
+
+### 6. Run the first simple test
 
     python getting_started.py
 
-### 6. Start on the tasks
+### 7. Start on the tasks
 
 * [Task 1 - Structured Content](docs/structured_content.md)
 * [Task 2 - Fairness](docs/fairness.md)

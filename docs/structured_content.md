@@ -12,17 +12,27 @@ Then place *3* messages on the queue for each invokation of the program
 
 Hint:
 
-    python -c "import json;print(json.dumps({'foo': 123, 'bar': 'def'}))"
+'''python
+import json
+print(json.dumps({'foo': 123, 'bar': 'def'}))
+'''
     {"bar": "def", "foo": 123}
 
 Hint 2:
 
-    python -c "import json;from datetime import datetime;print(json.dumps({'foo': '%s' % datetime.now()}))"
+'''python
+import json
+from datetime import datetime
+print(json.dumps({'foo': '%s' % datetime.now()}))'''
+
     {"foo": "2015-11-07 20:30:18.954288"}
 
 Hint 3:
 
-    python -c "import json;print(json.loads('{""message_num"": 1, ""data"": ""123""}')['data'])"
+'''python
+import json
+print(json.loads('{""message_num"": 1, ""data"": ""123""}')['data'])"'''
+
     123
 
-[Example Solution](..\lf_structured_content.py)
+[Example Solution](../lf_structured_content.py)
