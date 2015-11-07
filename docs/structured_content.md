@@ -11,12 +11,14 @@ Adjust the message content so that it contains this data:
 Then place *3* messages on the queue for each invokation of the program
 
 <a onclick="document.getElementById('something').style.display=''">Hint</a>:
-<div id="something" style="display:none">
+<div id="something" style="display:'none'">
+
 ```python
 import json
 print(json.dumps({'foo': 123, 'bar': 'def'}))
 ```
     {"bar": "def", "foo": 123}
+
 </div>
 
 Hint 2:
