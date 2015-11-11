@@ -19,15 +19,65 @@ Example:
    }
 ```
 
+You can test it out with
+
+```
+python search.py search
+```
+
 Hint 1:
+
+Find files you want:
 
 ```python
 from os import listdir
 from os.path import isfile, join
 
 def files_in_dir(path):
-    return [ f for f in listdir(path) if isfile(join(path, f)) ]
+    return [ join(path, f) for f in listdir(path) if isfile(join(path, f)) and f.endswith('.md') and not f.startswith('.') ]
+```
 
+Hint 2:
+
+Read a file:
+
+```python
+def file_content(filename):
+    fh = open(filename)
+    return fh.read()
+```
+
+Hint 3:
+
+Get words of text:
+
+```python
+def words(text):
+    return re.sub("[^a-z0-9]", " ",  text.lower()).split()
+```
+
+Hint 4:
+
+Write a structure to JSON:
+
+```python
+def write_json(filename, content):
+    outfile = open(filename, 'w+')
+    outfile.write(json.dumps(content))
+    outfile.close();
+```
+    
+Hint 5:
+
+Slice a list into *cols* lists:
+
+```python
+def slice(list, cols=2):
+    start = 0
+    for i in range(cols):
+        stop = start + len(list[i::cols])
+        yield list[start:stop]
+        start = stop
 ```
 
 [Example Solution](../lf_mapreduce.py)
