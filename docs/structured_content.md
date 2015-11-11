@@ -8,7 +8,7 @@ Adjust the message content so that it contains this data:
 - *message_num* for numbering the message
 - *timestamp* for when the message was added to the queue
 
-Then place *3* messages on the queue for each invokation of the program
+Then place *3* messages on the queue for each invocation of the program
 
 Hint:
 

@@ -43,7 +43,8 @@ Change ACCOUNT_KEY: Replace ? with should be J (there are two of them).
 
 * [Task 1 - Structured Content](docs/structured_content.md)
 * [Task 2 - Producers/Consumers](docs/producer_consumer.md)
-* [Task 3 -- Several Queues](docs/several_queues.md)
+* [Task 3 - Several Queues](docs/several_queues.md)
+* [Task 4 - MapReduce](docs/mapreduce.md)
 
 References
 ----------
@@ -51,3 +52,4 @@ References
 * [Python Azure client libraries](http://azure-storage.readthedocs.org/en/latest/)
 * [Getting started with Azure Storage Queues in Python Blog](https://azure.microsoft.com/en-us/documentation/articles/storage-python-how-to-use-queue-storage/)
 * [Azure Queues REST API](https://msdn.microsoft.com/en-us/library/azure/dd179363.aspx)
+* [MapReduce article](http://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf)
