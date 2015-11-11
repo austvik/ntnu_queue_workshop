@@ -42,11 +42,11 @@ Change ACCOUNT_KEY: Replace ? with should be J (there are two of them).
 ### 7. Start on the tasks
 
 * [Task 1 - Structured Content](docs/structured_content.md)
-* [Task 2 - Fairness](docs/fairness.md)
+* [Task 2 - Producers/Consumers](docs/producer_consumer.md)
 
 References
 ----------
 
 * [Python Azure client libraries](http://azure-storage.readthedocs.org/en/latest/)
 * [Getting started with Azure Storage Queues in Python Blog](https://azure.microsoft.com/en-us/documentation/articles/storage-python-how-to-use-queue-storage/)
-
+* [Azure Queues REST API](https://msdn.microsoft.com/en-us/library/azure/dd179363.aspx)
