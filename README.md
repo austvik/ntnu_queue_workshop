@@ -43,6 +43,7 @@ Change ACCOUNT_KEY: Replace ? with should be J (there are two of them).
 
 * [Task 1 - Structured Content](docs/structured_content.md)
 * [Task 2 - Producers/Consumers](docs/producer_consumer.md)
+* [Task 3 -- Several Queues](docs/several_queues.md)
 
 References
 ----------
