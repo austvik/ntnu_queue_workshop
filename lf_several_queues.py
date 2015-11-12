@@ -16,6 +16,7 @@ def create_queue(queue_service, queue_num):
     name = queue_name(queue_num)
     print('Creating queue %s' % name)
     queue_service.create_queue(name)
+    queue_service.clear_messages(name)
     
 def queue_name(queue_num):
     return '%s-%d' % (QUEUE_NAME, queue_num)
@@ -32,9 +33,9 @@ def producer(producer_num, num_to_produce, num_queues):
 
 def consumer(consumer_num, queues_to_check):
     for queue in queues_to_check:
-        check_queue(queue)
+        check_queue(consumer_num, queue)
 
-def check_queue(queue):
+def check_queue(consumer_num, queue):
     while True:
         messages = queue_service.get_messages(queue, 32)
         for message in messages:

@@ -159,9 +159,6 @@ for m in range(0, num_mappers):
     t.start()
 
 queue_slices = list(slice(letter_queues, num_index_writers))
-
-print(queue_slices)
-
 for m in range(0, num_index_writers):
     my_queues = queue_slices[m]
     t = threading.Thread(target=index_writer, args=('out', random.sample(my_queues, len(my_queues))))
